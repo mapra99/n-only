@@ -5,10 +5,10 @@ class User < ApplicationRecord
   has_secure_password
 
   private
-  
+
   def create_remember_token
     token = SecureRandom.urlsafe_base64
     token_digest = Digest::SHA1.hexdigest token
-    self.remember_token = token_digest
+    self.remember_token = helpers.remember_token
   end
 end
