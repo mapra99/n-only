@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'users/new'
+  post 'users', to: 'users#create'
   get 'posts/new'
   post 'posts', to: 'posts#create'
   get 'posts/', to: 'posts#index'
