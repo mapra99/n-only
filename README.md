@@ -17,7 +17,7 @@ to implement it.
 git clone git@github.com:mapra99/m-only.git
 ```
 
-2. `cd to the Project's folder:
+2. `cd` to the Project's folder:
 ```
 cd m-only
 ```
