@@ -1,24 +1,40 @@
-# README
+# Members Only!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In Members-Only, anyone can see what people post, but only members can see WHO posted it!
+This is an Authentication and Authorization system made directly, no special gems were used
+to implement it.
 
-Things you may want to cover:
+## Requisites
 
-* Ruby version
+* Ruby Version: 5.2 or superior
+* Rails Version: 6.0.0
+* Bundler Version: 2.0.2
 
-* System dependencies
+## Set Up and Use
 
-* Configuration
+1. Clone this repo from your terminal:
+```
+git clone git@github.com:mapra99/m-only.git
+```
 
-* Database creation
+2. `cd to the Project's folder:
+```
+cd m-only
+```
+3. Install dependencies
+```
+bundle install
+yarn install
+```
+4. Migrate the Database
+```
+rails db:migrate
+```
+5. Run the application
+```
+rails server
+```
+Open your browser in [https://localhost:3000](https://localhost:3000)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## About
+This is a project made by @mapra99
