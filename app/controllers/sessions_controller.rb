@@ -7,14 +7,14 @@ class SessionsController < ApplicationController
     set_current_user
     if @current_user&.authenticate(params[:session][:password])
       sign_in
-      render html:"Signed in"
+      redirect_to root_path
     else
-      render :new
+      render html: "Credentials provided are wrong"
     end
   end
 
   def delete
     sign_out
-    redirect_to signin_path
+    redirect_to root_path
   end
 end

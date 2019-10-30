@@ -13,7 +13,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user_id = @current_user.id
     if @post.save
-      render html: 'Post Saved'
+      redirect_to root_path
     else
       render html: 'There was an error'
     end
