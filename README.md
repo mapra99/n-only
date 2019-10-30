@@ -37,4 +37,4 @@ rails server
 Open your browser in [https://localhost:3000](https://localhost:3000)
 
 ## About
-This is a project made by @mapra99
+This is a project made by [mapra99](https://github.com/mapra99), following the [OdinProject](https://www.theodinproject.com/) guidelines about Ruby On Rails Curriculum.
