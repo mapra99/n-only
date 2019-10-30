@@ -4,6 +4,8 @@
   <div style="border: 1px solid">
     <h2><%= p.title %></h2>
     <p><%= p.body %></p>
-    <i>- <%= p.user.name %></i>
+    <% if current_user %>
+      <i>- <%= p.user.name %></i>
+    <% end %>
   </div>
 <% end %>
