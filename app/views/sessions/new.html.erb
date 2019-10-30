@@ -9,3 +9,7 @@
 
   <%= f.submit "Sign in" %>
 <% end %>
+
+<% if current_user %>
+  <%= link_to "Sign out", signin_path, method: :delete %>
+<% end %>

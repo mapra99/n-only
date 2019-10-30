@@ -1,6 +1,5 @@
 module ApplicationHelper
-  def set_remember_token
-    token = SecureRandom.urlsafe_base64
-    Digest::SHA1.hexdigest token
+  def current_user
+    @current_user ||= User.find_by(remember_token: cookies.permanent[:remember_token])
   end
 end
